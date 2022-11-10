@@ -1,0 +1,56 @@
+@charset "utf-8";
+
+/************************************************************************
+ * 파일명 :common.css
+ * 설명 : Reset CSS
+************************************************************************/
+
+*{margin:0;padding:0}
+html,body{width:100%;height:100%;margin:0;padding:0;font:10px/1 "Noto Sans KR","맑은 고딕","Malgun Gothic","Apple SD Gothic Neo","돋움",dotum,sans-serif;vertical-align:middle}
+html {/* overflow-y:scroll; */background:#fff}
+body {overflow-x:hidden;position:relative;width:100%}
+dl,ul,ol,menu,li{list-style:none}
+address,caption,cite,code,dfn,em,var{ font-style:normal;}
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,main { display:block}
+blockquote,q { quotes:none}
+blockquote:before,blockquote:after,q:before,q:after { content:"";content:none}
+hr{display:none}
+fieldset,img{border:none}
+legend,caption{display:block;overflow:hidden;position:absolute;text-indent:-9999px;top:-9999px;font-size:0;width:1px;height:1px;left:-9999px;line-height:0}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td,input,select,textarea,button {font-weight:normal;margin:0;padding:0}
+table{border-collapse:collapse;word-break:break-all;font-size:12px;border-spacing:0;empty-cells:show}
+
+/* Input n Textarea */
+textarea{resize:none}
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {color:#aaa;}
+input:-moz-placeholder,
+textarea:-moz-placeholder {color:#aaa;}
+input::-moz-placeholder,
+textarea::-moz-placeholder {color:#aaa;}
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {color:#aaa;}
+input:focus::-webkit-input-placeholder,
+textarea:focus::-webkit-input-placeholder {color:transparent;}
+input:focus:-moz-placeholder,
+textarea:focus:-moz-placeholder {color:transparent;}
+input:focus::-moz-placeholder,
+textarea:focus::-moz-placeholder {color:transparent;}
+input:focus:-ms-input-placeholder,
+textarea:focus:-ms-input-placeholder {color:transparent;}
+
+.hide{display:none}  /* none */
+.blind{display:block;overflow:hidden;position:absolute;text-indent:-9999px;top:-9999px;font-size:0;width:1px;height:1px;left:-9999px;line-height:0} /* hide */
+.png24{tmp:expression(setPng24(this))}
+
+/* Link Css */
+a{cursor:pointer;color:#666666}
+a:link,a:visited,a:active{text-decoration:none}
+a:hover{text-decoration:underline}
+a:active{background-color:transparent}
+
+/* form */
+input,select,textarea,button,label{ font:13px/1.4 "Noto Sans KR","맑은 고딕","Malgun Gothic","Apple SD Gothic Neo",-apple-system,system-ui,BlinkMacSystemFont,"돋움",dotum,sans-serif;vertical-align:middle;color:#666;outline:none}
+input::-ms-clear {display:none}
+button{border:0 none;cursor:pointer}
+button:disabled {cursor:default}

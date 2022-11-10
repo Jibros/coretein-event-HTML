@@ -1,0 +1,1119 @@
+<!doctype html>
+<html>
+<head>
+<title>종근당 이벤트</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<meta name="format-detection" content="telephone=no">
+<link rel="shortcut icon">
+<!-- CSS -->
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+<link href="./assets/css/reset.css" rel="stylesheet" type="text/css">
+<link href="./assets/css/style.css" rel="stylesheet" type="text/css">
+<link href="./assets/css/layer.css" rel="stylesheet" type="text/css">
+<link href="./assets/css/responsive.css" rel="stylesheet" type="text/css">
+
+<!-- JS -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+<script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+<script src="./assets/js/common.js"></script>
+
+</head>
+<body>
+<!-- 로더 -->
+<div class="spinner">
+    <div class="bounce1"></div>
+    <div class="bounce2"></div>
+    <div class="bounce3"></div>
+</div>
+<script>
+    // 로더 숨김
+    $(window).load(function(){
+        var $spin = $(".spinner");
+        setTimeout(function() {
+            $spin.fadeOut();
+        }, 2000);
+    })
+</script>
+<!-- // -->
+
+<!-- [C] WRAPPER -->
+<div class="wrapper">
+    <!-- [C] CONTAINER -->
+    <div class="container">
+        <!-- [C] HEADER -->
+        <div class="header">
+            <h1 class="brand-logo"><a href="index.html">종근당건강</a></h1>
+
+            <div class="inner">
+                <!-- VISUAL -->
+                <div class="visual">
+                    <div class="inner">
+                        <p class="visual-sub">양지은이 추천하는 제대로 만든 단백질</p>
+                        <h2 class="visual-tit">
+                            <span class="tx_tit1">근육건강 단백질</span>
+                            <span class="tx_tit2">이제는 코어틴 그린프로틴!</span>
+                        </h2>
+                    </div>
+                </div>
+                <!-- // -->
+            </div>
+
+
+                <!-- NAV -->
+                <div class="navs">
+                    <div class="inner">
+                        <ul class="nav_list">
+                            <li class="nav_item-1 is-on"><a href="#tab1">TVC 시청 이벤트</a></li>
+                            <li class="nav_item-2"><a href="#tab2">사연 작성하기 이벤트</a></li>
+                            <li class="nav_item-3"><a href="#tab3">구매 인증 이벤트</a></li>
+                            <li class="nav_item-4"><a href="#tab4">코어틴 그린프로틴</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- // -->
+        </div>
+        <!-- // [C] HEADER -->
+
+        <!-- [C] CONTENT -->
+        <div class="content">
+
+            <!-- [S] 탭 SECTION 1 : 퀴즈 이벤트 -->
+            <div class="section tab_cont1">
+                <div class="evt1">
+                    <div class="inner">
+                        <div class="evt_head">
+                            <p class="evt_tit">
+                                <span>EVENT 01</span>
+                                <span>코어틴 그린프로틴 TVC 런칭기능 이벤트</span>
+                                <span>TVC를 시청하면 다양한 경품의 기회가!</span>
+                            </p>
+
+                            <dl class="evt_date">
+                                <dt>이벤트 기간</dt>
+                                <dd>2021년 8월 1일 ~ 2021년 8월 31일</dd>
+                            </dl>
+
+                            <ul class="evt_step">
+                                <li class="step1">TVC 보기</li>
+                                <li class="step2">이벤트 참여</li>
+                                <li class="step3">당첨 확인하기</li>
+                                <li class="step4">공유하기(기회 1번 더)</li>
+                            </ul>
+                        </div>
+
+                        <div class="evt_body">
+                            <div class="quizwrap">
+                                <ul class="quiz_tab">
+                                    <li class="quiz-1 is-on"><a href="#">양지은 TVC 영상</a></li>
+                                    <li class="quiz-2"><a href="#">양지은 추천 영상</a></li>
+                                </ul>
+
+                                <span class="ico ico-1"></span>
+                                <span class="ico ico-2"></span>
+                                <span class="ico ico-coretein"></span>
+
+                                <div class="quiz_box">
+                                    <div class="quiz_cont quiz_cont-1 is-shown">
+
+                                        <div class="inner">
+                                            <!-- 퀴즈 스텝 1-->
+                                            <div class="qstep-1">
+                                                <div class="rt">
+                                                    <p class="tx_quiz">TVC 영상을<br>잘 보시고 퀴즈를 풀어주세요</p>
+                                                    <button type="button" class="btn btn-play">영상 확인하기</button>
+                                                    <p class="tx_alert">*1일 1회 참여 가능, 1회 공유 시 한 번 더!</p>
+                                                </div>
+                                            </div>
+                                            <!-- // -->
+
+                                            <div class="qstep-2" style="display:none;">
+                                                <div class="qstep-1-video-btn-area hidden-m">
+                                                    <button type="button" class="btn-skip">스킵</button>
+                                                </div>
+                                                <!-- <div id="qstep-2-video"></div> -->
+                                            </div>
+
+                                            <!-- 퀴즈 스텝 2-->
+                                            <div class="qstep-3" style="display:none;">
+                                                <p>코어틴 그린프로틴 장점 정리! 자세히 보시면 퀴즈 이벤트 참여에 큰 도움이 됩니다!</p>
+                                                <ul>
+                                                    <li>맛있는 단백질 - 매일 먹어도 부담없는 고소한 맛</li>
+                                                    <li>100% 식물성 단백질 - 유당 걱정 없이 속 편한 단백질</li>
+                                                    <li>저분자 발효단백질 - 가수분해 발효 공정을 통해 잘게 쪼갠 단백질 잘게 쪼개 소화가 편한 단백질</li>
+                                                </ul>
+                                            </div>
+                                            <!-- // -->
+
+                                            <!-- 퀴즈 스텝 3 : 드래그앤드랍 -->
+                                            <div class="qstep-4" style="display:none;">
+                                                <p class="tx_tit">패키지에 삽입된 제품명을 <strong>끌어와서 맞춰</strong>주세요</p>
+
+                                                <div class="drag_area">
+                                                    <div class="dropzone" id="gate"></div>
+
+                                                    <ul class="drag_btn">
+                                                        <li class="dragbtn dragbtn-1 winning">코어틴 - 그린 프로틴</li>
+                                                        <li class="dragbtn dragbtn-2 lose">코어틴 - 식물성 프로틴</li>
+                                                        <li class="dragbtn dragbtn-3 lose">코어틴 - 양지은 프로틴</li>
+                                                        <li class="dragbtn dragbtn-4 lose">코어틴 - 발효 프로틴</li>
+                                                    </ul>
+                                                    <!-- 재시작 버튼 : 확인용으로 넣어둔거라 삭제해 주세요 -->
+                                                    <button onclick="dragSet();" style="width:100px;height: 100px; background: #000; color:#fff;">재시작 </button>
+                                                </div>
+
+                                            </div>
+                                            <!-- // -->
+                                        </div>
+                                    </div>
+
+                                    <div class="quiz_cont quiz_cont-2">
+                                        <div class="inner">
+                                            <iframe width="100%" height="100%" id="playVod" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 경품 -->
+                    <div class="gift_inner">
+                        <div class="inner">
+                            <h3 class="gift_tit">경품안내 <strong>근육건강 &amp; 밸런스</strong>를 돕기위한 다양한 경품!</h3>
+
+                            <div class="gift_box">
+                                <ul class="gift_list">
+                                    <li class="gift-1">
+                                        <span class="gimg">더 강력하고 더 가볍게! 삼성전자 비스포크제트 - 2명</span>
+                                    </li>
+                                    <li class="gift-2">
+                                        <span class="gimg">운동하며 건강 모니터링 갤럭시 스마트 워치 - 5명 </span>
+                                    </li>
+                                    <li class="gift-3">
+                                        <span class="gimg">집에서도 간편하게! 스탭퍼 5통 - 20명</span>
+                                    </li>
+                                    <li class="gift-4">
+                                        <span class="gimg">메일 체크하는 인바디 체중계 - 15명</span>
+                                    </li>
+                                    <li class="gift-5">
+                                        <span class="gimg">운동 후 코어틴 그로프로틴 섭취! 코어틴 그린프로틴 - 150명</span>
+                                    </li>
+                                    <!-- <li class="gift-6">
+                                        <span class="gimg">코어틴 같이 꼭 필요한 세븐일레븐 편의점 쿠폰</span>
+                                    </li> -->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- // -->
+                </div>
+
+            </div>
+            <!-- // -->
+
+            <!-- [S] 탭 SECTION 2 : 사연 작성하기 이벤트 -->
+            <div class="section tab_cont2">
+                <div class="evt2">
+                    <div class="inner">
+                        <div class="evt_head">
+                            <p class="evt_tit">
+                                <span>EVENT 02</span>
+                                <span>코어틴 필요한 상황 사연 작성하기 이벤트</span>
+                                <span>#코어틴이필요해, #코어틴이벤트</span>
+                            </p>
+
+                            <dl class="evt_date">
+                                <dt>이벤트 기간</dt>
+                                <dd>2021년 8월 1일 ~ 2021년 8월 31일</dd>
+                            </dl>
+                        </div>
+
+                        <div class="evt_body">
+                            <div class="storywrap">
+                                <div class="gift_info hidden-pc">
+                                    <span class="tx_balloon">2명, 함께 나누자고! 코어틴 24통 [6개월분 증정]</span>
+                                </div>
+
+                                <ol class="story_info">
+                                    <li>
+                                        <p class="tx_join1">
+                                            <span>참여방법 1</span>
+                                            <span>‘사연 작성하기’ 를 클릭 후 코어틴이 필요한 상황의 사진과 사연을 올려주세요!</span>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p class="tx_join2">
+                                            <span>참여방법 2</span>
+                                            <span>코어틴이 필요한 상황을 인스타그램에 #해시태그와 함께 올려주세요! #코어틴이필요해, #코어틴이벤트</span>
+                                        </p>
+                                    </li>
+                                </ol>
+
+                                <div class="btn_group">
+                                    <button type="button" class="btn btn-write" onclick="modalOn('#layWrite')">사연 작성하기</button>
+                                    <button type="button" class="btn btn-insta">인스타그램</button>
+                                </div>
+
+                                <p class="tx_sub">
+                                    ‘좋아요’를 많이 받을 수록 당첨확률UP!!
+                                    게시글 삭제 시 이벤트에서 제외되며, 이벤트 종료 후 추첨을 통해 당첨자에게 개별 문자를 전송드립니다.
+                                </p>
+
+                                <div class="gift_info hidden-m">
+                                    <span class="tx_balloon">2명, 함께 나누자고! 코어틴 24통 [6개월분 증정]</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 인스타 -->
+                    <div class="insta_inner">
+                        <div class="inner">
+                            <h3 class="insta_tit">코어틴으로 <strong>빈틈없는 영양 균형</strong>을 설계해 보세요</h3>
+
+                            <div class="insta_box">
+                                <ul class="insta_list">
+                                    <li>
+                                        <a href="#" target="_blank">
+                                            <span class="dimmed"></span>
+                                            <span class="thumb"><img src="./assets/imgs/w_insta_test1.png" alt="인스타이미지" /></span>
+                                            <span class="lcount">2323</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_blank">
+                                            <span class="dimmed"></span>
+                                            <span class="thumb"><img src="./assets/imgs/w_insta_test2.png" alt="인스타이미지" /></span>
+                                            <span class="lcount">2323</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_blank">
+                                            <span class="dimmed"></span>
+                                            <span class="thumb"><img src="./assets/imgs/w_insta_test3.png" alt="인스타이미지" /></span>
+                                            <span class="lcount">2323</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_blank">
+                                            <span class="dimmed"></span>
+                                            <span class="thumb"><img src="./assets/imgs/w_insta_test4.png" alt="인스타이미지" /></span>
+                                            <span class="lcount">2323</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_blank">
+                                            <span class="dimmed"></span>
+                                            <span class="thumb"><img src="./assets/imgs/w_insta_test5.png" alt="인스타이미지" /></span>
+                                            <span class="lcount">2323223</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_blank">
+                                            <span class="dimmed"></span>
+                                            <span class="thumb"><img src="./assets/imgs/w_insta_test6.png" alt="인스타이미지" /></span>
+                                            <span class="lcount">2323</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_blank">
+                                            <span class="dimmed"></span>
+                                            <span class="thumb"><img src="./assets/imgs/w_insta_test7.png" alt="인스타이미지" /></span>
+                                            <span class="lcount">2323</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_blank">
+                                            <span class="dimmed"></span>
+                                            <span class="thumb"><img src="./assets/imgs/w_insta_test8.png" alt="인스타이미지" /></span>
+                                            <span class="lcount">2323</span>
+                                        </a>
+                                    </li>
+                                </ul>
+
+                                <div class="paging">
+                                    <span class="curr">1</span>/<span class="total">15</span>
+                                </div>
+
+                                <div class="btn_arrow">
+                                    <button type="button" class="btn btn-prev">이전</button>
+                                    <button type="button" class="btn btn-next">다음</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- // -->
+                </div>
+
+            </div>
+            <!-- // -->
+
+            <!-- [S] 탭 SECTION 3 : 구매 인증 이벤트 -->
+            <div class="section tab_cont3">
+                <div class="evt3">
+                    <div class="evt_head">
+                        <div class="inner">
+                            <p class="evt_tit">
+                                <span>EVENT 03</span>
+                                <span>코어틴 구매하고 영수증 인증하면 푸짐한 경품이 구매 인증 이벤트</span>
+                                <span>코어틴 구매 후 영수증을 캡처!</span>
+                            </p>
+
+                            <dl class="evt_date">
+                                <dt>이벤트 기간</dt>
+                                <dd>2021년 8월 1일 ~ 2021년 8월 31일</dd>
+                            </dl>
+
+                            <div class="receipt hidden-pc"><!-- 영수증 이미지 --></div>
+                        </div>
+                    </div>
+
+                    <div class="evt_body">
+                        <div class="inner">
+                            <div class="buycerwrap">
+                                <ol class="buycer_info">
+                                    <li>
+                                        <p class="tx_join1">
+                                            <span>1. 구매 인증하기 클릭</span>
+                                            <ul>
+                                                <li>*구매 인증은 자사몰 외 온라인 유통사 채널 가능</li>
+                                                <li>*오프라인으로 구매시 영수증을 찍어 업로드 해주세요</li>
+                                            </ul>
+                                        </p>
+                                        <ul class="buy_logo">
+                                            <li><a href="#" class="btn btn-naver" target="_blank">종근당건강 네이버 스마트스토어</a></li>
+                                            <li><a href="#" class="btn btn-nsshop" target="_blank">NS홈쇼핑</a></li>
+                                            <li><a href="#" class="btn btn-gsshop" target="_blank">GS SHOP</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><p class="tx_join2"><span>2. 구매 후 영수증 이미지를 캡쳐해주세요</span></p></li>
+                                    <li><p class="tx_join3"><span>3. 구매 인증하기 버튼을 누르고 작성하면 완료!</span></p></li>
+                                </ol>
+
+                                <div class="btn_group">
+                                    <button type="button" class="btn btn-buycer" onclick="modalOn('#layPurchase')">구매 인증하기</button>
+                                </div>
+
+                                <div class="receipt hidden-m"><!-- 영수증 이미지 --></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 경품 -->
+                    <div class="gift_inner">
+                        <div class="inner">
+                            <h3 class="gift_tit">경품안내</h3>
+
+                            <div class="gift_box">
+                                <ul class="gift_list">
+                                    <li class="gift-1">
+                                        <span class="gimg">코어틴TVC 시청용 아이패드 에어 4세대</span>
+                                    </li>
+                                    <li class="gift-2">
+                                        <span class="gimg">운동하며 건강 모니터링 스마트워치</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- // -->
+                </div>
+
+            </div>
+            <!-- // -->
+
+            <!-- [S] 탭 SECTION 4 : 코어틴 알아보기 -->
+            <div class="section tab_cont4">
+                <div class="evt4">
+                    <div class="evt_buy">
+                        <div class="inner">
+                            <p class="evt_tit">
+                                <span>구매하러 가기</span>
+                            </p>
+
+                            <ul class="evt_logo">
+                                <li class="logo1"><a href="#" target="_blank">GS SHOP</a></li>
+                                <li class="logo2"><a href="#" target="_blank">COUPANG</a></li>
+                                <li class="logo3"><a href="#" target="_blank">위메프</a></li>
+                                <li class="logo4"><a href="#" target="_blank">G market</a></li>
+                                <li class="logo5"><a href="#" target="_blank">11st</a></li>
+                                <li class="logo6"><a href="#" target="_blank">타임커머스 TMON</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="evt_coretein">
+                        <div class="inner">
+                            <p class="evt_tit">
+                                <span>코어틴 알아보기</span>
+                            </p>
+
+                            <div class="tx_info">
+                                <span>매일 먹어야 하는 필수 영양소 단백질!</span>
+                                <span>
+                                    단백질은 근육과 신체 조직의 구성성분으로 섭취 시
+                                    체내에서 일정량을 사용한 후 분해되기 때문에
+                                    한 번에 많이 섭취 하시는 것보다
+                                    저축하듯 매일 꾸준히 섭취하는 것이 좋습니다.
+                                    근육 구성성분인 단백질 섭취는 필수적입니다.
+                                </span>
+                            </div>
+
+                            <div class="tx_check">
+                                <span>섭취 전에 꼭 확인하세요!</span>
+                                <span>
+                                    건강기능식품인가?<br>
+                                    매일 먹기 맛있는 제품인가?<br>
+                                    속이 편한 단백질인가?<br>
+                                    전문가가 만들어 믿을 수 있는 제품인가?
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="evt_coretein_detail">
+                        <div class="inner">
+                            <div class="tx">
+                                <p>종근당건강의 근육건강 단백질 브랜드 코어틴!</p>
+                                <p>CORE(중심, 핵심) + PROTEIN(단백질)</p>
+                                <p>중심, 핵심을 뜻하는 ‘<strong>CORE</strong>’와 단백질을 뜻하는 ‘<strong>PROTEIN</strong>’이 결합한 합성어로 몸의 중심을 잡아주는, 종근당건강의 단백질 브랜드 입니다.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="evt_notice">
+                        <div class="inner">
+                            <button type="button" class="btn btn-notice" onclick="modalOn('#layNotice')">이벤트 유의사항</button>
+
+                            <div class="noti_box">
+                                <ul class="tx_addr">
+                                    <li><strong class="nb">※ 건강기능식품 광고입니다.</strong></li>
+                                    <li><strong>제조원</strong> (주)메이준바이오텍 / 충북 증평군 도안면 증평2산단로 227</li>
+                                    <li><strong>유통전문판매원</strong> 종근당건강(주) / 충남 당진시 송악읍 복운1길 30</li>
+                                </ul>
+
+                                <ul class="tx_addr">
+                                    <li><strong>이벤트 관련 문의</strong> 종근당건강 이벤트 사무실</li>
+                                    <li><strong>주소</strong> 서울특별시 용산구 청파로 383, 종근당건강 6층</li>
+                                    <li><strong>이메일</strong> <a href="mailto:czmpaigninfo@gmail.com">czmpaigninfo@gmail.com</a></li>
+                                    <li><strong>전화</strong> 070 - 4048 - 3636</li>
+                                    <li><strong>상담시간</strong> 10:00 ~ 17:00 (주말 및 공휴일 제외)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- // -->
+        </div>
+        <!-- // -->
+    </div>
+    <!-- // -->
+</div>
+<!-- // [C] WRAPPER -->
+
+<!-------------------------- [C] LAYER -------------------------->
+<!-- 레이어 : 캡쳐 영역 -->
+<div id="facebook" class="lay-capture">
+    <div class="lay-inner">
+        <div id="photo" class="thum_photo">
+            <span class="wm_logo">맛잇는 근육건강 단백질, 코어틴 그린프로틴</span>
+            <!-- 세로형 이미지 샘플 -->
+            <!-- <span class="thumb"><img src="https://s.pstatic.net/shopping.phinf/20210614_11/2208320b-a957-433b-b5ad-21e255982b49.jpg?type=f214_292" alt="" /></span> -->
+            <!-- 가로형 이미지 샘플 -->
+            <span class="thumb"><img src="https://s.pstatic.net/static/www/mobile/edit/2021/0707/cropImg_728x360_67575701164278664.png" alt="" /></span>
+        </div>
+        <p class="tx_photo">
+            우리 관악구 테니스 공주님들! 요즘 스윙에 힘이 <br>
+            빠지는 것 같은데 그린프로틴으로 다같이 챙겨봐요!!<br>
+            더 안심하고 편하게 섭취하세요!
+        </p>
+    </div>
+</div>
+<!-- // -->
+
+<!-- 그린프로틴 구매하기 -->
+<div class="lay-sticky">
+    <div class="lay-inner">
+        <a href="" target="_blank"><img src="./assets/imgs/w_bnr_balloon.png" class="btn-sns" alt="코어틴 그린프로틴 구매하기" /></a>
+        <button type="button" class="btn btn-cls" onclick="$(this).closest('.lay-sticky').fadeOut();">닫기</button>
+    </div>
+</div>
+<!-- // -->
+
+<!-- 레이어 : 탭 1-1, 정답 - 정보 입력하기 -->
+<div id="laySuccess" class="lay-wrap">
+    <div class="dimmed"></div>
+
+    <div class="lay-inner">
+
+        <div class="lay-head">
+            <div class="tx_cmt tx_cmt-1">
+                <p>정답입니다! 당첨 확인을 위해 정보를 입력해주세요.</p>
+            </div>
+        </div>
+        <div class="lay-body">
+            <form name="event1Form1" method="post" action="/event1/process1">
+            <div class="user_info">
+
+                <div class="row">
+                    <div class="col">
+                        <input type="text" name="name" class="ipt ipt-txt" required="required" tabindex="1" placeholder="이름" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <input type="text" name="phone" class="ipt ipt-txt" required="required" tabindex="2" placeholder="휴대폰 번호" />
+                    </div>
+                </div>
+                <div class="row row-chk">
+                    <div class="col">
+                        <input type="checkbox" id="chkPrivacy1-1" name="privacy" class="input--checkbox-item">
+                        <label for="chkPrivacy1-1" title="개인정보 수집동의">개인정보 수집동의</label>
+                    </div>
+                    <div class="col">
+                        <button type="button" class="btn btn-privacy">자세히보기</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="btn-group">
+                <button type="button" class="btn btn-info">정보 입력하기</button>
+            </div>
+            </form>
+        </div>
+
+        <button type="button" class="btn btn-cls" onclick="modalOff(this);">닫기</button>
+    </div>
+</div>
+<!-- // -->
+
+<!-- 레이어 : 탭 1-2, 준비중 -->
+<div id="layReady" class="lay-wrap">
+    <div class="dimmed"></div>
+
+    <div class="lay-inner lay-ready">
+        <div class="lay-body">
+            <div class="tx_ready">경품 추첨 준비중입니다.</div>
+        </div>
+    </div>
+</div>
+<!-- // -->
+
+<!-- 레이어 : 탭 1-3, 당첨 -->
+<div id="laywinning" class="lay-wrap">
+    <div class="dimmed"></div>
+
+    <div class="lay-inner lay-complete">
+        <div class="lay-body">
+            <div class="tx_comp">
+                <div class="scs_gift scs_gift-1">
+                    축하합니다
+                    삼성전자 비스포크제트에 당첨되셨습니다!
+                </div>
+                <div class="scs_gift scs_gift-2">
+                    축하합니다
+                    갤럭시 스마트 워치에 당첨되셨습니다!
+                </div>
+                <div class="scs_gift scs_gift-3">
+                    축하합니다
+                    코어틴 그린프로틴 5통에 당첨되셨습니다!
+                </div>
+                <div class="scs_gift scs_gift-4">
+                    축하합니다
+                    스탭퍼에 당첨되셨습니다!
+                </div>
+                <div class="scs_gift scs_gift-5">
+                    축하합니다
+                    인바디 체중계에 당첨되셨습니다!
+                </div>
+                <div class="scs_gift scs_gift-6">
+                    축하합니다
+                    코어틴 그린프로틴 1통에 당첨되셨습니다!
+                </div>
+
+                <div class="btn-group">
+                    <button type="button" class="btn btn-address">정보 입력하기</a>
+                </div>
+            </div>
+
+        </div>
+
+        <button type="button" class="btn btn-cls" onclick="modalOff(this);">닫기</button>
+    </div>
+</div>
+<!-- // -->
+
+<!-- 레이어 : 탭 1-4, 배송지 입력하기 -->
+<div id="layDeliveryinfo" class="lay-wrap">
+    <div class="dimmed"></div>
+
+    <div class="lay-inner">
+
+        <div class="lay-head">
+            <div class="tx_cmt tx_cmt-4">
+                <p>이벤트 기간이 끝난 이후 입력하신 배송지로 경품이 배송될 예정입니다</p>
+            </div>
+        </div>
+        <div class="lay-body">
+            <form name="event1Form2" method="post" action="/event1/process2">
+            <div class="user_info">
+
+                <div class="row">
+                    <div class="col">
+                        <input type="text" name="name" class="ipt ipt-txt" required="required" tabindex="1" placeholder="이름" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <input type="text" name="phone" class="ipt ipt-txt" required="required" tabindex="2" placeholder="휴대폰 번호" />
+                    </div>
+                </div>
+                <div class="row row-btn">
+                    <div class="col">
+                        <input type="text" id="api_zipCode1_4" name="zipcode" class="ipt ipt-txt api-zipcode" required="required" tabindex="3" placeholder="우편번호" />
+                        <button type="button" class="btn btn-addr">검색</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <input type="text" id="api_Address1_4" name="address1" class="ipt ipt-txt api-addr" required="required" tabindex="4" placeholder="주소" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <input type="text" id="api_detailAddress1_4" name="address2" class="ipt ipt-txt api-detailaddr" required="required" tabindex="4" placeholder="상세주소" />
+                    </div>
+                </div>
+                <div class="row row-chk">
+                    <div class="col">
+                        <input type="checkbox" id="chkPrivacy1-4" name="privacy" class="input--checkbox-item">
+                        <label for="chkPrivacy1-4" title="개인정보 수집동의">개인정보 수집동의</label>
+                    </div>
+                    <div class="col">
+                        <button type="button" class="btn btn-privacy">자세히보기</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="btn-group">
+                <button type="button" class="btn btn-info">정보 입력하기</button>
+            </div>
+            </form>
+        </div>
+
+        <button type="button" class="btn btn-cls" onclick="modalOff(this);">닫기</button>
+    </div>
+</div>
+<!-- // -->
+
+
+<!-- 레이어 : 탭 1-5, 오답 -->
+<div id="layFail" class="lay-wrap" >
+    <div class="dimmed"></div>
+
+    <div class="lay-inner lay-bomb">
+        <div class="lay-body">
+            <div class="tx_bomb">
+                아쉽네요
+                공유하고 다시 도전해보세요.
+            </div>
+
+            <div class="btn-sns">
+                <p class="tx_sns">공유하면 기회가 한 번 더!</p>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-kakao">카카오톡 공유</button>
+                    <button type="button" class="btn btn-fb">페이스북 공유</button>
+                    <button type="button" class="btn btn-nblog">네이버 블로그 공유</button>
+                </div>
+            </div>
+
+        </div>
+
+        <button type="button" class="btn btn-cls" onclick="modalOff(this);">닫기</button>
+    </div>
+</div>
+<!-- // -->
+
+<!-- 레이어 : 탭 2-1, 사연 작성하기 -->
+<div id="layWrite" class="lay-wrap">
+    <div class="dimmed"></div>
+
+    <div class="lay-inner">
+
+        <div class="lay-head">
+            <div class="tx_cmt tx_cmt-2_1">
+                <p>
+                    사연 작성하기 이벤트 참여를 위해 정보를 입력해주세요<br>
+                    이벤트 기간이 끝난 이후 입력하신 배송지로 경품이 배송될 예정입니다.
+                </p>
+            </div>
+        </div>
+        <div class="lay-body">
+            <form name="event2Form" method="post" action="/event2/process1" enctype="multipart/form-data">
+            <div class="user_info">
+
+                <div class="row">
+                    <div class="col">
+                        <input type="text" name="name" class="ipt ipt-txt" required="required" tabindex="1" placeholder="이름" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <input type="text" name="phone" class="ipt ipt-txt" required="required" tabindex="2" placeholder="휴대폰 번호" />
+                    </div>
+                </div>
+                <div class="row row-btn">
+                    <div class="col">
+                        <input type="text" id="api_zipCode2_1" name="zipcode" class="ipt ipt-txt api-zipcode" required="required" tabindex="3" placeholder="우편번호" />
+                        <button type="button" class="btn btn-addr">검색</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <input type="text" id="api_Address2_1" name="address1" class="ipt ipt-txt api-addr" required="required" tabindex="4" placeholder="주소" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <input type="text" id="api_detailAddress2_1" name="address2" class="ipt ipt-txt api-detailaddr" required="required" tabindex="4" placeholder="상세주소" />
+                    </div>
+                </div>
+                <div class="row row-chk">
+                    <div class="col">
+                        <input type="checkbox" id="chkPrivacy2-1" name="privacy" class="input--checkbox-item">
+                        <label for="chkPrivacy2-1" title="개인정보 수집동의">개인정보 수집동의</label>
+                    </div>
+                    <div class="col">
+                        <button type="button" class="btn btn-privacy">자세히보기</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="btn-group">
+                <button type="button" class="btn btn-info">정보 입력하기</button>
+            </div>
+            </form>
+        </div>
+
+        <button type="button" class="btn btn-cls" onclick="modalOff(this);">닫기</button>
+    </div>
+</div>
+<!-- // -->
+
+<!-- 레이어 : 탭 2-2, 사진 첨부 -->
+<div id="layPhotoAdd" class="lay-wrap">
+    <div class="dimmed"></div>
+
+    <div class="lay-inner lay-upload">
+        <div class="lay-body">
+            <form>
+            <div class="img_upload">
+                <div id="addPhoto" class="img_area">
+                    <!-- 세로형 이미지 샘플 -->
+                    <!-- <span class="thumb"><img src="https://s.pstatic.net/shopping.phinf/20210614_11/2208320b-a957-433b-b5ad-21e255982b49.jpg?type=f214_292" alt="" /></span> -->
+                    <!-- 가로형 이미지 샘플 -->
+                    <span class="thumb"><img src="https://s.pstatic.net/static/www/mobile/edit/2021/0707/cropImg_728x360_67575701164278664.png" alt="" /></span>
+                </div>
+
+                <div class="btn-upload">
+                    <p class="blind">코어틴이 필요한 상황의 사진을 넣어주세요 (제품 이미지와 함께 업로드를 할 경우 당첨확률 UP!</p>
+                    <label for="up_file" class="btn-sns">이미지 찾기</label>
+                    <input type="file" name="attach" id="up_file">
+                </div>
+            </div>
+
+            <div class="tx_area">
+                <textarea rows="5" class="ipt-txtarea" placeholder="코어틴이 필요한 사연을 남겨주세요. (100자 미만)"></textarea>
+            </div>
+
+            <div class="btn-group">
+                <button type="button" class="btn btn-next">다음</button>
+            </div>
+            </form>
+        </div>
+
+        <button type="button" class="btn btn-cls" onclick="modalOff(this);">닫기</button>
+    </div>
+</div>
+<!-- // -->
+
+<!-- 레이어 : 탭 2-3, 공유 -->
+<div id="layThanksSns" class="lay-wrap">
+    <div class="dimmed"></div>
+
+    <div class="lay-inner lay-thanks">
+        <div class="lay-body">
+            <div class="tx_thanks">
+                감사합니다. 기대 & 추천평을 친구에게 공유해 보세요
+            </div>
+
+            <div class="btn-sns">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-kakao">카카오톡 공유</button>
+                    <button type="button" class="btn btn-fb">페이스북 공유</button>
+                    <!-- <button type="button" class="btn btn-nblog hidden-m">네이버 블로그 공유</button> --> <!-- PC 노출 -->
+                    <!-- <button type="button" class="btn btn-insta hidden-pc">인스타그램 공유</button> --> <!-- 모바일 노출 -->
+                </div>
+            </div>
+        </div>
+
+        <button type="button" class="btn btn-cls" onclick="modalOff(this);">닫기</button>
+    </div>
+</div>
+<!-- // -->
+
+<!-- 레이어 : 탭 2-4, 사진 다운로드 -->
+<div id="layPhotoDown" class="lay-wrap">
+    <div class="dimmed"></div>
+
+    <div class="lay-inner lay-download">
+        <div class="lay-body">
+            <div class="tx_downimg">
+                <strong>이미지를 다운로드</strong>하고 인스타그램에 공유하세요.
+            </div>
+            <form>
+            <div class="img_download">
+                <div class="img_area">
+                    <!-- 첨부된 이미지 표시 class="canvas-img" -->
+                    <img src="./assets/imgs/popup/m_downimg.png" class="canvas-img" alt="">
+                </div>
+            </div>
+            <p class="tx_sub">* 아이폰은 이미지를 꾸~욱 눌러 저장하세요</p>
+
+
+            <div class="btn-group">
+                <button type="button" class="btn btn-download">이미지 다운로드</button>
+            </div>
+            </form>
+        </div>
+
+        <button type="button" class="btn btn-cls" onclick="modalOff(this);">닫기</button>
+    </div>
+</div>
+<!-- // -->
+
+<!-- 레이어 : 탭 3-2, 구매인증 이벤트 참여 -->
+<div id="layPurchase" class="lay-wrap">
+    <div class="dimmed"></div>
+
+    <div class="lay-inner">
+
+        <div class="lay-head">
+            <div class="tx_cmt tx_cmt-3_2">
+                <p>
+                    구매 인증 이벤트 참여를 위해 정보를 입력해주세요 <br>
+                    이벤트 기간이 끝난 이후 입력하신 배송지로 경품이 배송될 예정입니다.
+                </p>
+            </div>
+        </div>
+        <div class="lay-body">
+            <form name="event3Form" method="post" action="/event3/process" enctype="multipart/form-data">
+            <div class="user_info">
+                    <div class="row row-btn">
+                        <div class="col">
+                            <input type="text" id="yourPhoto" class="ipt ipt-txt" required="required" tabindex="1" placeholder="구매 인증 사진" />
+                            <input type="file" id="fileInput" name="attach" class="btn btn-find">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <input type="text" name="name" class="ipt ipt-txt" required="required" tabindex="2" placeholder="이름" minlength="2" maxlength="20" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <input type="text" name="phone" class="ipt ipt-txt" required="required" tabindex="2" placeholder="휴대폰 번호" minlength="9" maxlength="13" />
+                        </div>
+                    </div>
+                    <div class="row row-btn">
+                        <div class="col">
+                            <input type="text" name="zipcode" class="ipt ipt-txt api-zipcode" required="required" tabindex="3" placeholder="우편번호" maxlength="5" />
+                            <button type="button" class="btn btn-addr">검색</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <input type="text" name="address1" class="ipt ipt-txt api-addr" required="required" tabindex="4" placeholder="주소" maxlength="200" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <input type="text" name="address2" class="ipt ipt-txt api-detailaddr" required="required" tabindex="4" placeholder="상세주소" maxlength="200" />
+                        </div>
+                    </div>
+                    <div class="row row-chk">
+                        <div class="col">
+                            <input type="checkbox" id="chkPrivacy3-2" class="input--checkbox-item">
+                            <label for="chkPrivacy3-2" title="개인정보 수집동의">개인정보 수집동의</label>
+                        </div>
+                        <div class="col">
+                            <button type="button" class="btn btn-privacy">자세히보기</button>
+                        </div>
+                    </div>
+                </div>
+
+            <div class="btn-group">
+                <button type="button" class="btn btn-info">정보 입력하기</button>
+            </div>
+            </form>
+        </div>
+
+        <button type="button" class="btn btn-cls" onclick="modalOff(this);">닫기</button>
+    </div>
+</div>
+<!-- // -->
+
+<!-- 레이어 : 탭 3-3, 공유 -->
+<div id="layComplete" class="lay-wrap">
+    <div class="dimmed"></div>
+
+    <div class="lay-inner lay-joincomp">
+        <div class="lay-body">
+            <div class="tx_joincomp">
+                감사합니다. 구매 인증 이벤트에 응모되었습니다
+            </div>
+        </div>
+
+        <button type="button" class="btn btn-cls" onclick="modalOff(this);">닫기</button>
+    </div>
+</div>
+<!-- // -->
+
+<!-- 레이어 : 이벤트 유의사항 -->
+<div id="layNotice" class="lay-wrap">
+    <div class="dimmed"></div>
+
+    <div class="lay-inner lay-notice">
+        <div class="lay-head">
+            <p class="tx_noti_head">이벤트 유의사항</p>
+        </div>
+        <div class="lay-body">
+            <div class="tx_noti_list">
+                <ul>
+                    <li>이벤트 참여를 위해 개인정보가 활용됩니다. (대행업체명 : 디블렌트) </li>
+                    <li>본 이벤트는 당사의 사정에 의해 예고없이 변동될 수 있으며, 실제 제공되는 경품은 상기 이미지와 다를 수 있습니다.  </li>
+                    <li>당첨자는 동일인으로 중복 당첨되지 않습니다.  </li>
+                    <li>이벤트 참여 관련 부정한 방법으로 응모한 것이 확인될 경우 당첨이 취소됩니다.  </li>
+                    <li>당첨자는 추첨을 통해 선정되며, 입력하신 개인정보로 경품이 발송되므로 정확한 정보를 입력해주시기 바랍니다.  </li>
+                    <li>경품 배송은 이벤트 종료 후 일괄 배송되며, 당사 사정에 따라 연기될 수 있습니다.  </li>
+                    <li>잘못된 정보 입력으로 인한 불이익은 책임지지 않습니다.  </li>
+                    <li>지급되는 경품 중 5만원 이상의 경품에 대한 제세공과금 22%는 당첨자 본인 부담입니다. 제세공과금 신고를 위한 개인정보제공 (신분증 사본 등)을 거부할 시  당첨이 취소됩니다.  </li>
+                    <li>경품 지급을 위해 수탁사에서 개별 연락 드리며 제세공과금 신고를 위해 신분증 사본등의 개인정보를 요청할 수 있습니다.  </li>
+                    <li>지급받으신 경품은 타인에게 양도 및 판매를 금합니다.  </li>
+                    <li>개인정보동의로 수집된 개인정보는 개인정보 보호법 규정에 의거하여 적용되며, 수집된 개인정보는 모든 경품 발송이 끝난 후 안전한 방식으로 폐기됩니다. </li>
+                </ul>
+            </div>
+
+            <div class="btn-group">
+                <button type="button" class="btn btn-confirm" onclick="modalOff(this);">확인</button>
+            </div>
+        </div>
+
+        <button type="button" class="btn btn-cls" onclick="modalOff(this);">닫기</button>
+    </div>
+</div>
+<!-- // -->
+
+<!-- 레이어 : 개인정보 수집 동의서 -->
+<div id="layPrivacy" class="lay-wrap">
+    <div class="dimmed"></div>
+
+    <div class="lay-inner lay-notice">
+        <div class="lay-head">
+            <p class="tx_noti_head">개인정보 수집 동의서</p>
+        </div>
+        <div class="lay-body">
+            <div class="tx_noti_list">
+                <ul>
+                    <li>개인정보 수집 범위 : 이름, 연락처 </li>
+                    <li>개인정보 수집 및 이용 목적 : 이벤트 응모, 추첨, 경품 발송 등 이벤트 안내 및 추후 마케팅 진행 시 활용 </li>
+                    <li>개인정보 보유 및 이용 기간 : 이벤트 종료 후 11개월 이내 파기 (단, 관계 법령의 규정에 의하여 보존할 필요가 있는 경우 관련 법령에 따라 보관) </li>
+                    <li>개인정보 이용에 동의하지 않는 경우에는 이벤트 참여가 제한 될 수 있습니다.</li>
+                    <li>본 이벤트 참여 시 경품 발송을 위한 개인 정보 취급, 위탁에 대해 동의한 것으로 간주합니다. </li>
+                </ul>
+            </div>
+
+            <div class="btn-group">
+                <button type="button" class="btn btn-confirm" onclick="modalOff(this);">확인</button>
+            </div>
+        </div>
+
+        <button type="button" class="btn btn-cls" onclick="modalOff(this);">닫기</button>
+    </div>
+</div>
+<!-- // -->
+<!-- // [C] LAYER -->
+<!-------------------------- [C] LAYER -------------------------->
+
+
+<!-- Daum 우편번호 서비스 JS -->
+<script>
+    // 주소 찾기 클릭
+    var $btnAddress = $(".btn-addr");
+    $btnAddress.on("click", function(){
+        var $t = $(this),
+            $t_zipcode = $t.closest(".user_info").find(".api-zipcode"),    // 인접한 우편번호 input
+            $t_addr = $t.closest(".user_info").find(".api-addr"),    // 인접한 주소 input
+            $t_d_addr = $t.closest(".user_info").find(".api-detailaddr"); // 인접한 상세주소 input
+
+            execDaumPostcode($t_zipcode, $t_addr, $t_d_addr)
+    });
+    function execDaumPostcode(zipcode_in, addr_in, d_addr_in) {
+        new daum.Postcode({
+            oncomplete: function(data) {
+                // 팝업에서 검색결과 항목을 클릭했을때 실행할 코드를 작성하는 부분.
+
+                // 각 주소의 노출 규칙에 따라 주소를 조합한다.
+                // 내려오는 변수가 값이 없는 경우엔 공백('')값을 가지므로, 이를 참고하여 분기 한다.
+                var addr = ''; // 주소 변수
+                var extraAddr = ''; // 참고항목 변수
+
+                //사용자가 선택한 주소 타입에 따라 해당 주소 값을 가져온다.
+                if (data.userSelectedType === 'R') { // 사용자가 도로명 주소를 선택했을 경우
+                    addr = data.roadAddress;
+                } else { // 사용자가 지번 주소를 선택했을 경우(J)
+                    addr = data.jibunAddress;
+                }
+
+                // 사용자가 선택한 주소가 도로명 타입일때 참고항목을 조합한다.
+                if(data.userSelectedType === 'R'){
+                    // 법정동명이 있을 경우 추가한다. (법정리는 제외)
+                    // 법정동의 경우 마지막 문자가 "동/로/가"로 끝난다.
+                    if(data.bname !== '' && /[동|로|가]$/g.test(data.bname)){
+                        extraAddr += data.bname;
+                    }
+                    // 건물명이 있고, 공동주택일 경우 추가한다.
+                    if(data.buildingName !== '' && data.apartment === 'Y'){
+                        extraAddr += (extraAddr !== '' ? ', ' + data.buildingName : data.buildingName);
+                    }
+                    // 표시할 참고항목이 있을 경우, 괄호까지 추가한 최종 문자열을 만든다.
+                    if(extraAddr !== ''){
+                        extraAddr = ' (' + extraAddr + ')';
+                    }
+                    // 조합된 참고항목을 해당 필드에 넣는다.
+                    //document.getElementById("sample6_extraAddress").value = extraAddr;
+
+                } else {
+                    //document.getElementById("sample6_extraAddress").value = '';
+                }
+
+                // 우편번호와 주소 정보를 해당 필드에 넣는다.
+                //document.getElementById('sample6_postcode').value = data.zonecode;
+                zipcode_in.val(data.zonecode);
+                addr_in.val(addr);
+                // 커서를 상세주소 필드로 이동한다.
+                d_addr_in.focus();
+            }
+        }).open();
+    }
+</script>
+
+</body>
+</html>

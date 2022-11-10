@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+<head>
+<title>종근당 이벤트</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi" />
+<meta name="format-detection" content="telephone=no">
+<!-- CSS -->
+<link href="./apps/css/webfont.css" rel="stylesheet" type="text/css">
+<link href="./apps/css/reset.css" rel="stylesheet" type="text/css">
+<link href="./apps/css/style.css" rel="stylesheet" type="text/css">
+<link href="./apps/css/layer.css" rel="stylesheet" type="text/css">
+
+<!-- JS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+<script src="./apps/js/common.js"></script>
+
+
+
+</head>
+
+<body>
+<!-- [C] WRAPPER -->
+<div class="wrapper">
+    <!-- [C] CONTAINER -->
+    <div class="container">
+
+       <!--  <div class="drag_area">
+            <div class="dropzone" id="gate"></div>
+        
+            <ul class="drag_btn">
+                <li><button type="button" class="dragbtn dragbtn-1">코어틴 - 그린 프로틴</button></li>
+                <li><button type="button" class="dragbtn dragbtn-2">코어틴 - 식물성 프로틴</button></li>
+                <li><button type="button" class="dragbtn dragbtn-3">코어틴 - 양지은 프로틴</button></li>
+                <li><button type="button" class="dragbtn dragbtn-4">코어틴 - 발효 프로틴</button></li>
+            </ul>
+        </div> -->
+
+        <style>
+            .dragContainer{position:relative; width:700px; height:300px; background:#f9f9f9;}
+            #droppable{position:absolute; width:100px; height:100px; background:#ccc; top:50px; left:300px;}
+            .draggable{display: inline-block; width:50px; height:50px; background:#ff0;text-align:center; line-height:50px;}
+            .drag1.is-on{top:50px !important;left:300px !important;width:100px;height:100px;}
+
+            
+
+        </style>
+        <div class="dragContainer">
+            <div id="droppable"></div>
+          
+            <span class="draggable drag1">drag1</span>
+            <span class="draggable drag2">drag2</span>
+            <span class="draggable drag3">drag3</span>
+          </div>
+
+
+          
+          <script>
+              $(function () {
+                    var currentObj;
+                    $( ".draggable" ).draggable({
+                        // "axis": "x" ,//가로로만 이동
+                        start:function(event, ui ) {
+                        currentObj = $(".ui-draggable-dragging");
+                    },
+                    containment:".dragContainer"//이 영역 안에서만 이동 
+                    });
+                    $( "#droppable" ).droppable({
+                        
+                    drop: function( event, ui ) {
+                        //영역안으로 드롭 했을때
+                        var uiClass = currentObj.attr("class");
+                        if(uiClass.indexOf('drag1') != -1){
+                        console.log("drag1!!");
+                        $( ".drag1" ).addClass("is-on");
+                        $( ".drag1" ).draggable("destroy");
+                        
+                        }else if(uiClass.indexOf('drag2') != -1){
+                            $( ".drag2" ).css({"position":"relative","top":"0"})
+                            console.log("drag2!!");
+                        }else if(uiClass.indexOf('drag3') != -1){
+                            console.log("drag3!!");
+                        } 
+                    }
+                    });
+
+
+
+                });
+          </script>
+    </div>
+</div>
+</body>
+</html>
